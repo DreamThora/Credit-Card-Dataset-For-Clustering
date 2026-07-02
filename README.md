@@ -128,7 +128,7 @@ All Silhouette scores remain below 0.30, which indicates that customer behavior 
 
 ```python
 # Key dependencies
-pip install scikit-learn scipy
+pip install -r requirements.txt
 ```
 
 ---

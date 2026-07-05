@@ -119,6 +119,21 @@ K-Means and Hierarchical Clustering agree on **90.7%** of customer assignments a
 All Silhouette scores remain below 0.30, which indicates that customer behavior lies on a **continuous spectrum** rather than splitting into sharply distinct groups. K=2 is the strongest natural break, but clusters should be interpreted as behavioral *tendencies*, not rigid categories.
 
 ---
+## ⚠️ Limitations
+
+- Customer behavior shows weak intrinsic dimensionality (single primary axis), 
+  resulting in low absolute Silhouette scores (~0.26–0.29) across all methods
+- Domain expertise required to translate behavioral patterns into business strategies
+- Static snapshot — does not capture behavioral changes over time
+- No CLV or profitability data available — business impact of each segment cannot 
+  be quantified without input from the business team
+
+**Suggested Next Steps (Pending Domain Validation)**
+1. Validate behavioral hypotheses with banking domain experts
+2. Design A/B test for differentiated marketing per segment
+3. Investigate the 14-customer micro-cluster as a case study
+4. Build onboarding strategy for the 295 newcomer outliers
+---
 
 ## 🚀 How to Run
 

@@ -76,7 +76,8 @@ Raw Data
 ### Hierarchical Clustering
 - Ward linkage on PCA-reduced data
 - Dendrogram shows largest gap at top split → K=2
-- Silhouette score peaks at K=2 (≈ 0.26)
+- Initially tested K=3 for finer business granularity (highest Silhouette among K=3–6 at 0.212), but re-testing with K=2 included showed a higher score (0.260) — confirming K=2 as the statistically stronger choice
+- Silhouette score peaks at K=2 (≈ 0.26), consistent with K-Means
 
 ### DBSCAN
 - `eps` selected from k-distance plot (k = 2 × n_features = 16)

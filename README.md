@@ -150,6 +150,8 @@ pip install -r requirements.txt
 
 ## 🔮 Future Improvements
 
-This project achieved its objective — identifying 2 validated behavioral segments with 90.7% cross-algorithm agreement, supplemented by DBSCAN outlier detection. The natural next step is business validation: confirming that the segments are actionable before designing campaigns around them.
-
-If further clustering is needed, the continuous spectrum nature of this data suggests exploring models better suited for soft boundaries.
+- **Alternative algorithms** — test GMM or Spectral Clustering, better suited for 
+  the soft/continuous cluster boundaries observed in this dataset
+- **Time-series analysis** — track how customers transition between segments over time
+- **Predictive model** — build a classifier to assign new customers to segments 
+  without re-running the full clustering pipeline
